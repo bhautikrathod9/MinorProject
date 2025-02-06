@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from "../../assets/images/logo.png"
 import { Link } from 'react-router-dom'
 import CountryDrop from '../countryDropdown/CountryDrop'
+import { FaSearch } from "react-icons/fa";
+import Button from '@mui/material/Button';
 
 
 const Header = () => {
@@ -14,7 +16,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='header'>
+            <header className='header'>
                 <div className='container'>
                     <div className='row'>
                         <div className='logoWrapper d-flex align-items-center col-sm-2'>
@@ -23,10 +25,16 @@ const Header = () => {
 
                         <div className='col-sm-10 d-flex align-items-center part2'>
                             <CountryDrop />
+                            {/* Header search start here */}
+                                <div className='headerSearch ml-3 mr-3'>
+                                    <input type='text' /> 
+                                    <Button><FaSearch /></Button>
+                                </div>
+                             {/* Header search end here */}
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
         </div>
     </>
   )
