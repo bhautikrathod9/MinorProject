@@ -6,6 +6,7 @@ import MySearchBox from './searchBox';
 import UserHeader from './UserHeader';
 import { HeaderLine } from './HeaderLine';
 
+import Nav from '../Navigation/Nav';
 
 const Header = () => {
   return (
@@ -28,6 +29,8 @@ const Header = () => {
                     </div>
                 </div>
             </header>
+
+            <Nav />
         </div>
     </>
   )

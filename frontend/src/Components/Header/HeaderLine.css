@@ -14,5 +14,11 @@
   .headerWrapper .header{
     width: 100%;
     height: auto;
-    padding: 10px 0px;
+    padding: 20px 0px;
   }
+
+  @media (min-width: 1300px) {
+    .container {
+        max-width: 1200px;
+    }
+}
