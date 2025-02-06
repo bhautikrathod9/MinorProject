@@ -32,6 +32,11 @@ const Header = () => {
                                 </div>
                              {/* Header search end here */}
                         </div>
+                        <div>
+                            <h1>
+                                Home pages made my kevin
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </header>
