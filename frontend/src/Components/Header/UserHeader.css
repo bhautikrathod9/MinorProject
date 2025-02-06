@@ -1,0 +1,38 @@
+.header .part3 .circle{
+    align-items: center;
+    justify-content: center;
+    min-width: 50px !important;
+    height: 46px !important;
+    width: 46px !important;
+    border-radius: 50% !important;
+    border: 1px solid #ee8663 !important;
+    color: #ee8663;
+}
+.header .part3 .circle svg{
+    font-size: 21px;
+}
+  
+.cartTab .price{
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+}
+  
+.cartTab button{
+    background-color: #fff1ee !important;
+}
+  
+.cartTab svg{
+    color: #ea2b0f !important;
+}
+  
+.cartTab .count{
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    background: #ea2b0f;
+    border-radius: 50%;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+}

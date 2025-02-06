@@ -1,0 +1,18 @@
+.bg-orange{
+    background: #ff8942;
+  }
+  
+  .headerWrapper .top-strip{
+    padding: 10px 0px;
+  }
+  
+  .headerWrapper .top-strip p{
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .headerWrapper .header{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+  }
