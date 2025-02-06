@@ -1,0 +1,51 @@
+nav .allCatTab{
+    background: #ff8942;
+    padding: 8px 15px !important;
+    border-radius: 30px !important;
+  }
+  
+  nav .allCatTab *{
+    color: #fff;
+  }
+  
+  nav .allCatTab:hover{
+    background-color: #e95900;
+  }
+  
+  nav .allCatTab .text{
+    font-weight: 600;
+  }
+  
+  nav .allCatTab .icon1 svg{
+    font-size: 25px !important;
+  }
+  
+  nav .allCatTab .icon2 svg{
+    font-size: 15px !important;
+  }
+  
+  nav .navPart2 ul{
+    margin-bottom: 0px;
+  }
+  
+  nav .navPart2 ul li a{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 25px;
+  }
+  
+  nav .navPart2 ul li svg{
+    font-size: 15px;
+  }
+  
+  nav .navPart2 ul li a:hover{
+    background-color: #ffe6d6;
+    color: #ff8234;
+  }
