@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import CountryDrop from '../countryDropdown/CountryDrop'
 import { FaSearch } from "react-icons/fa";
 import Button from '@mui/material/Button';
-
+import { FaUser } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -27,10 +27,18 @@ const Header = () => {
                             <CountryDrop />
                             {/* Header search start here */}
                                 <div className='headerSearch ml-3 mr-3'>
-                                    <input type='text' /> 
+                                    <input type='text' placeholder='Search for products'/> 
                                     <Button><FaSearch /></Button>
                                 </div>
                              {/* Header search end here */}
+
+                             <div className='part3 d-flex align-items-center ml-auto'>
+                                <Button className='circle mr-3'><FaUser /></Button>
+                                <div className='ml-auto cartTab'>
+                                    <span className='price'>$3.29</span>
+                                    <Button className='circle ml-auto'><FaSearch /></Button>
+                                </div>
+                             </div>
                         </div>
                     </div>
                 </div>
