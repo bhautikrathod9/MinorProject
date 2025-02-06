@@ -10,7 +10,7 @@ const Nav = () => {
     <nav>
     <div className='container'>
         <div className='row'>
-            <div className='col-sm-3 navPart1'>
+            <div className='col-sm-2 navPart1'>
                 
                 <Button className='allCatTab align-items-center'>
                     <span className='icon1 mr-2'><IoMenu/></span>
@@ -18,7 +18,7 @@ const Nav = () => {
                     <span className='icon2 ml-2'><FaAngleDown /></span>
                 </Button>
             </div>
-            <div className='col-sm-9 navPart2 d-flex align-items-center'>
+            <div className='col-sm-10 navPart2 d-flex align-items-center'>
                 <ul className='list list-inline ml-auto'>
                     <li className='list-inline-item'><Link to={'/'}>Home</Link></li>
                     <li className='list-inline-item'><Link to={'/'}>Art</Link></li>
@@ -26,6 +26,7 @@ const Nav = () => {
                     <li className='list-inline-item'><Link to={'/'}>Craft supplies</Link></li>
                     <li className='list-inline-item'><Link to={'/'}>Gifts</Link></li>
                     <li className='list-inline-item'><Link to={'/'}>Blog</Link></li>
+                    <li className='list-inline-item'><Link to={'/'}>About Us</Link></li>
                     <li className='list-inline-item'><Link to={'/'}>Contact Us</Link></li>
                 </ul>
             </div>
