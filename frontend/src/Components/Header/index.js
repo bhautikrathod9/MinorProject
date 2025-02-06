@@ -5,6 +5,7 @@ import CountryDrop from '../countryDropdown/CountryDrop'
 import { FaSearch } from "react-icons/fa";
 import Button from '@mui/material/Button';
 import { FaUser } from "react-icons/fa6";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Header = () => {
   return (
@@ -34,9 +35,12 @@ const Header = () => {
 
                              <div className='part3 d-flex align-items-center ml-auto'>
                                 <Button className='circle mr-3'><FaUser /></Button>
-                                <div className='ml-auto cartTab'>
+                                <div className='ml-auto cartTab d-flex align-items-center'>
                                     <span className='price'>$3.29</span>
-                                    <Button className='circle ml-auto'><FaSearch /></Button>
+                                    <div className='position-relative ml-2'>
+                                    <Button className='circle'><AiOutlineShoppingCart /></Button>
+                                    <span className='count d-flex align-items-center justify-content-center'>1</span>
+                                    </div>
                                 </div>
                              </div>
                         </div>

@@ -39,7 +39,7 @@ body{
   min-width: 150px;
   color: #000 !important;
   border: 1px solid #000 !important;
-  border-radius: 7px !important;
+  border-radius: 10px !important;
 }
 
 .headerWrapper .header .part2 .countryDrop{
@@ -89,6 +89,10 @@ header .headerSearch input{
   padding: 0px 20px !important;
 }
 
+header .headerSearch input::-webkit-input-placeholder{
+  color: rgba(0,0,0,0.6);
+}
+
 header .headerSearch button{
   min-width: 40px !important;
   height: 40px !important;
@@ -114,4 +118,29 @@ header .headerSearch button svg{
 
 .header .part3 .circle svg{
   font-size: 21px;
+}
+
+.cartTab .price{
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+
+.cartTab button{
+  background-color: #fff1ee !important;
+}
+
+.cartTab svg{
+  color: #ea2b0f !important;
+}
+
+.cartTab .count{
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  background: #ea2b0f;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
 }
