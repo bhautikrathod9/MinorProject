@@ -1,0 +1,38 @@
+header .headerSearch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 46px;
+    background: #f3f4f7;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  header .headerSearch input{
+    background: transparent !important;
+    outline: none !important;
+    font-size: 14px;
+    color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 46px;
+    border:0px !important;
+    padding: 0px 20px !important;
+  }
+  
+  header .headerSearch input::-webkit-input-placeholder{
+    color: rgba(0,0,0,0.6);
+  }
+  
+  header .headerSearch button{
+    min-width: 40px !important;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
+    color: #000;
+  }
+  
+  header .headerSearch button svg{
+    font-size: 20px;
+  }
