@@ -1,11 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
+import Home from "./Pages/Home";
+import Header from "./Components/Header";
 
 function App() {
   return (
-    <>
-    <h1 className='text-danger'>hello world</h1>
-    </>
+    <BrowserRouter>
+    <Header />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

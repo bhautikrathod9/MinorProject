@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+ 
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.bg-orange{
+  background: #ff8942;
+}
+
+.headerWrapper .top-strip{
+  padding: 10px 0px;
+}
+
+.headerWrapper .top-strip p{
+  color: #fff;
+  font-size: 18px;
+}
+
+.headerWrapper .header{
+  width: 100%;
+  height: auto;
+  padding: 0px 0px;
+}
+
+.logoWrapper img{
+  width: 70%;
+}
+
+.headerWrapper .header .part2 .countryDrop{
+  width: 150px;
+  height: auto;
+  min-width: 150px;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+  border-radius: 7px !important;
+}
+
+.headerWrapper .header .part2 .countryDrop{
+  text-align: left;
+  justify-content: flex-start !important;
+}
+
+.headerWrapper .header .part2 .countryDrop .label{
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: rgba(0,0,0,0.5) !important;
+  line-height: 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop .name{
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+  color: #ee8663 !important;
+  line-height: 16px;
+  font-weight: 700;
+}
