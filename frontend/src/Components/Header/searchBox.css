@@ -1,4 +1,4 @@
-header .headerSearch{
+.headerSearch{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,7 +10,7 @@ header .headerSearch{
     border-radius: 10px;
   }
   
-  header .headerSearch input{
+  .headerSearch input{
     background: transparent !important;
     outline: none !important;
     font-size: 14px;
@@ -21,11 +21,11 @@ header .headerSearch{
     padding: 0px 20px !important;
   }
   
-  header .headerSearch input::-webkit-input-placeholder{
+  .headerSearch input::-webkit-input-placeholder{
     color: rgba(0,0,0,0.6);
   }
   
-  header .headerSearch button{
+  .headerSearch button{
     min-width: 40px !important;
     height: 40px !important;
     width: 40px !important;
@@ -33,6 +33,6 @@ header .headerSearch{
     color: #000;
   }
   
-  header .headerSearch button svg{
+  .headerSearch button svg{
     font-size: 20px;
   }
