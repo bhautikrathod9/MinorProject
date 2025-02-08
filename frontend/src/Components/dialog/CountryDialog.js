@@ -1,11 +1,35 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Dialog from '@mui/material/Dialog';
 import '../dialog/CountryDialog.css'
 import Button from '@mui/material/Button';
 import { FaSearch } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
+import { MyContext } from '../../App';
 
-const countryDialog = ({ open, onClose}) => {
+const CountryDialog = ({ open, onClose}) => {
+
+  const [selectedTab, setSelectedTab] = useState(null)
+  const [CountryList, setCountryList] = useState(null)
+
+  const context = useContext(MyContext)
+
+  useEffect(() => {
+    setCountryList(context.countryList)
+
+    CountryList.filter((item) => {
+      return item.toLowerCase().includes(keyword)
+    })
+  })
+
+  const filterList = (e) => {
+    const keyword = e.target.value.toLowerCase()
+  }
+
+  const selectedCountry = (index) => {
+    setSelectedTab(index)
+    onClose()
+  }
+
   return (
     <>
       <Dialog open={open} onClose={onClose} className='locationModel' >
@@ -14,36 +38,26 @@ const countryDialog = ({ open, onClose}) => {
         <Button className='close_' onClick={onClose}><IoCloseSharp /></Button>
         
         <div className='headerSearch w-100'>
-          <input type='text' placeholder='Search your area....'/> 
+          <input type='text' placeholder='Search your area....' onChange={filterList}/> 
           <Button><FaSearch /></Button>
         </div>
 
         <ul className='countryList mt-3'>
-          <li><Button onClick={onClose}>Argentina</Button></li>
-          <li><Button onClick={onClose}>Australia</Button></li>
-          <li><Button onClick={onClose}>Brazil</Button></li>
-          <li><Button onClick={onClose}>Canada</Button></li>
-          <li><Button onClick={onClose}>China</Button></li>
-          <li><Button onClick={onClose}>France</Button></li>
-          <li><Button onClick={onClose}>Germany</Button></li>
-          <li><Button onClick={onClose}>India</Button></li>
-          <li><Button onClick={onClose}>Italy</Button></li>
-          <li><Button onClick={onClose}>Japan</Button></li>
-          <li><Button onClick={onClose}>Mexico</Button></li>
-          <li><Button onClick={onClose}>Netherlands</Button></li>
-          <li><Button onClick={onClose}>New Zealand</Button></li>
-          <li><Button onClick={onClose}>Russia</Button></li>
-          <li><Button onClick={onClose}>South Africa</Button></li>
-          <li><Button onClick={onClose}>South Korea</Button></li>
-          <li><Button onClick={onClose}>Spain</Button></li>
-          <li><Button onClick={onClose}>Sweden</Button></li>
-          <li><Button onClick={onClose}>Switzerland</Button></li>
-          <li><Button onClick={onClose}>United Kingdom</Button></li>
-          <li><Button onClick={onClose}>United States</Button></li>
+          {
+            context.countryList?.length!==0 && context.countryList?.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Button onClick={() => selectedCountry(index)} className={`${selectedTab===index ? 'active' : ''}`}>
+                    {item.country}
+                  </Button>
+                </li>
+              )
+            })
+          }
         </ul>
       </Dialog>
     </>
   )
 }
 
-export default countryDialog
+export default CountryDialog
