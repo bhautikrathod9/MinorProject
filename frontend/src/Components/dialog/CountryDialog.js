@@ -9,25 +9,31 @@ import { MyContext } from '../../App';
 const CountryDialog = ({ open, onClose}) => {
 
   const [selectedTab, setSelectedTab] = useState(null)
-  const [CountryList, setCountryList] = useState(null)
+  const [CountryList, setCountryList] = useState([])
 
   const context = useContext(MyContext)
 
   useEffect(() => {
     setCountryList(context.countryList)
-
-    CountryList.filter((item) => {
-      return item.toLowerCase().includes(keyword)
-    })
-  })
+  }, [])
 
   const filterList = (e) => {
     const keyword = e.target.value.toLowerCase()
+    if(keyword !== ""){
+      const list = CountryList.filter((item) => {
+        return item.country.toLowerCase().includes(keyword)
+      })
+      setCountryList(list)
+    }else{
+      setCountryList(context.countryList)
+    }
+    
   }
 
-  const selectedCountry = (index) => {
+  const selectedCountry = (index, country) => {
     setSelectedTab(index)
     onClose()
+    context.setSelectedCountry(country)
   }
 
   return (
@@ -44,10 +50,10 @@ const CountryDialog = ({ open, onClose}) => {
 
         <ul className='countryList mt-3'>
           {
-            context.countryList?.length!==0 && context.countryList?.map((item, index) => {
+            CountryList?.length!==0 && CountryList?.map((item, index) => {
               return (
                 <li key={index}>
-                  <Button onClick={() => selectedCountry(index)} className={`${selectedTab===index ? 'active' : ''}`}>
+                  <Button onClick={() => selectedCountry(index, item.country)} className={`${selectedTab===index ? 'active' : ''}`}>
                     {item.country}
                   </Button>
                 </li>
