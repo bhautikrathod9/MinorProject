@@ -14,6 +14,7 @@
 .locationModel .MuiPaper-elevation{
     padding: 20px;
     position: relative;
+    border-radius: 35px;
 }
 
 .locationModel .close_{
@@ -49,4 +50,8 @@
     color: #000 !important;
     justify-content: flex-start !important;
     padding: 10px 20px;
+}
+
+.locationModel .countryList li button.active{
+    background: #d7d7d7;
 }

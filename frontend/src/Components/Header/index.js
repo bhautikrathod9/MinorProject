@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Logo from "../../assets/images/logo.png"
 import { Link } from 'react-router-dom'
 import CountryDrop from './CountryDrop'
 import MySearchBox from './searchBox';
 import UserHeader from './UserHeader';
 import { HeaderLine } from './HeaderLine';
-
 import Nav from '../Navigation/Nav';
+import { MyContext } from '../../App';
 
 const Header = () => {
+
+    const context = useContext(MyContext);
   return (
     <>
         <div className='headerWrapper'>
@@ -22,14 +24,15 @@ const Header = () => {
                         </div>
 
                         <div className='col-sm-10 d-flex align-items-center part2'>
-                            <CountryDrop />
+                            {
+                                context.countryList.Length!==0 && <CountryDrop />
+                            }
                             <MySearchBox />
                             <UserHeader />
                         </div>
                     </div>
                 </div>
             </header>
-
             <Nav />
         </div>
     </>
