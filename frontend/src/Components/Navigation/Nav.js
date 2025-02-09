@@ -19,7 +19,7 @@ const Nav = () => {
                         <span className='text'>ALL CATEGARIES</span>
                         <span className='icon2 ml-2'><FaAngleDown /></span>
                     </Button>
-                    <div className={`sideNavBar ${isopenSidebarVal === true ? 'open' : ''}`}>
+                    <div className={`sideNavBar ${isopenSidebarVal === false ? 'open' : ''}`}>
                         <ul> 
                             <li><Link to={'/'}><Button>Art</Button></Link></li>
                             <li><Link to={'/'}><Button>Decor</Button></Link></li>
