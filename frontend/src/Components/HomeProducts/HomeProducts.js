@@ -2,8 +2,17 @@ import React from 'react'
 import '../HomeProducts/HomeProducts.css'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Button from '@mui/material/Button';
+import Slider from 'react-slick';
 
 const HomeProducts = () => {
+    var productsSliderOptions = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true
+      };
   return (
     <section className='homeProducts'>
         <div className='container'>
@@ -22,7 +31,19 @@ const HomeProducts = () => {
                         </div>
                         <Button className="viewAllBtn ml-auto">View All <FaLongArrowAltRight /></Button>
                     </div>
+
+                    <div className='product_row w-100'>
+                        <Slider {...productsSliderOptions}>
+                            <div className='item productItem'>
+                                <div className='imgWrapper'>
+                                    <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='' />
+                                </div>
+                            </div>
+                        </Slider>
+                    </div>
                 </div>
+
+                
             </div>
         </div>
 
