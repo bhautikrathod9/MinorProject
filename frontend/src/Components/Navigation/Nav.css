@@ -45,12 +45,46 @@ nav .navPart1{
     color: #000;
     width: 100%;
     justify-content: flex-start;
-    
+  }
+
+  nav .navPart1 .catWrapper .sideNavBar ul li button svg{
+    font-size: 13px;
+    opacity: 0.6;
   }
 
   nav .navPart1 .catWrapper .sideNavBar ul li button:hover{
-    background: #e7e7e7 !important;
-    
+    background: #e7e7e7 !important; 
+  }
+
+  nav .navPart1 .catWrapper .sideNavBar ul li{
+    position: relative;
+  }
+
+  nav .navPart1 .catWrapper .sideNavBar ul li .subMenu{
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  nav .navPart1 .catWrapper .sideNavBar ul li:hover .subMenu{
+    opacity: 1;
+    visibility: inherit;
+    left: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+
+  nav .navPart1 .catWrapper .sideNavBar ul li:hover .subMenu button{
+    border-radius: 0px !important;
   }
 
 nav .allCatTab{

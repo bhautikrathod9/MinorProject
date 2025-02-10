@@ -3,11 +3,12 @@ import Button from '@mui/material/Button';
 import { IoMenu } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { FaAngleRight } from "react-icons/fa";
 import './Nav.css'
 
 const Nav = () => {
     
-    const [isopenSidebarVal, setisopenSidebarVal] = useState(true)
+    const [isopenSidebarVal, setisopenSidebarVal] = useState(false)
   return (
     <nav>
     <div className='container'>
@@ -19,17 +20,16 @@ const Nav = () => {
                         <span className='text'>ALL CATEGARIES</span>
                         <span className='icon2 ml-2'><FaAngleDown /></span>
                     </Button>
-                    <div className={`sideNavBar ${isopenSidebarVal === false ? 'open' : ''}`}>
+                    <div className={`sideNavBar ${isopenSidebarVal === true ? 'open' : ''}`}>
                         <ul> 
-                            <li><Link to={'/'}><Button>Art</Button></Link></li>
-                            <li><Link to={'/'}><Button>Decor</Button></Link></li>
-                            <li><Link to={'/'}><Button>Craft supplies</Button></Link></li>
-                            <li><Link to={'/'}><Button>Gifts</Button></Link></li>
-                            <li><Link to={'/'}><Button>Art</Button></Link></li>
-                            <li><Link to={'/'}><Button>Decor</Button></Link></li>
-                            <li><Link to={'/'}><Button>Craft supplies</Button></Link></li>
-                            <li><Link to={'/'}><Button>Gifts</Button></Link></li>
-                            <li><Link to={'/'}><Button>Art</Button></Link></li>
+                            <li><Link to={'/'}><Button>Art <FaAngleRight className='ml-auto' /></Button></Link>
+                                <div className='subMenu'> 
+                                    <Link to={'/'}><Button>Decor</Button></Link>
+                                    <Link to={'/'}><Button>Decor</Button></Link>
+                                    <Link to={'/'}><Button>Decor</Button></Link>
+                                    <Link to={'/'}><Button>Decor</Button></Link>
+                                </div>
+                            </li>
                             <li><Link to={'/'}><Button>Decor</Button></Link></li>
                             <li><Link to={'/'}><Button>Craft supplies</Button></Link></li>
                             <li><Link to={'/'}><Button>Gifts</Button></Link></li>

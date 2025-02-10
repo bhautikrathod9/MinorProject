@@ -1,5 +1,5 @@
 import React from 'react';
-import '../HomeBanner/HomeBanner.css';
+import './HomeBanner.css';
 import Slider from "react-slick";
 import src from '../../assets/images/banner.jpeg';
 

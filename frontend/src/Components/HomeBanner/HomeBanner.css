@@ -20,7 +20,7 @@
     justify-content: center;
     width: 40px !important;
     height: 40px !important;
-    background: #000;
+    background: #ff8942;
     color: #fff; /* Ensure the arrow is visible */
     border-radius: 50%; /* Optional: Make the button round */
 }
