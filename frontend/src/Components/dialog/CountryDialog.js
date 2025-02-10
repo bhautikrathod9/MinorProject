@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Dialog from '@mui/material/Dialog';
-import '../dialog/CountryDialog.css'
+import './CountryDialog.css'
 import Button from '@mui/material/Button';
 import { FaSearch } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";

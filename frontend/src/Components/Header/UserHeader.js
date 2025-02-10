@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '@mui/material/Button';
 import { FaUser } from "react-icons/fa6";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import '../Header/UserHeader.css'
+import './UserHeader.css'
 
 const UserHeader = () => {
   return (
