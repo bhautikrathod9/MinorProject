@@ -7,7 +7,7 @@ import Slider from 'react-slick';
 const HomeProducts = () => {
     var productsSliderOptions = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -41,9 +41,7 @@ const HomeProducts = () => {
                             </div>
                         </Slider>
                     </div>
-                </div>
-
-                
+                </div>                
             </div>
         </div>
 
