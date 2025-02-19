@@ -3,6 +3,8 @@ import '../HomeProducts/HomeProducts.css'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Button from '@mui/material/Button';
 import Slider from 'react-slick';
+import { AiOutlineFullscreen } from "react-icons/ai";
+import { FaRegHeart } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -32,7 +34,7 @@ const HomeProducts = () => {
                     <div className='product_row w-100 mt-4'>
                         <Swiper
                             slidesPerView={4}
-                            spaceBetween={30}
+                            spaceBetween={10}
                             pagination={{
                             clickable: true,
                             }}
@@ -43,11 +45,21 @@ const HomeProducts = () => {
                                 <div className='item productItem'>
                                     <div className='imgWrapper'>
                                         <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='w-100' />
+
+                                        <span className='badge badge-primary'>28%</span>
+                                        <div className='actions'>
+                                            <button><AiOutlineFullscreen/></button>
+                                            <button><FaRegHeart /></button>
+                                        </div>
                                     </div>
                                     <div className='info'>
                                         <h4>Wethrel's original ceramal hard candies</h4>
                                         <span className='text-success d-block'>In Stock</span>
-                                        <Rating name='read-only' value={5} readOnly size='small' precision={0.5} />
+                                        <Rating className='mt-2 mb-2' name='read-only' value={5} readOnly size='small' precision={0.5} />
+                                        <div className='d-flex'>
+                                            <span className='oldPrice'>$20.00</span>
+                                            <span className='netPrice text-danger ml-2'>$16.99</span>
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -56,12 +68,14 @@ const HomeProducts = () => {
                                     <div className='imgWrapper'>
                                         <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='w-100' />
                                     </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className='item productItem'>
-                                    <div className='imgWrapper'>
-                                        <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='w-100' />
+                                    <div className='info'>
+                                        <h4>Wethrel's original ceramal hard candies</h4>
+                                        <span className='text-success d-block'>In Stock</span>
+                                        <Rating className='mt-2 mb-2' name='read-only' value={5} readOnly size='small' precision={0.5} />
+                                        <div className='d-flex'>
+                                            <span className='oldPrice'>$20.00</span>
+                                            <span className='netPrice text-danger ml-2'>$16.99</span>
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -69,6 +83,79 @@ const HomeProducts = () => {
                                 <div className='item productItem'>
                                     <div className='imgWrapper'>
                                         <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='w-100' />
+                                    </div>
+                                    <div className='info'>
+                                        <h4>Wethrel's original ceramal hard candies</h4>
+                                        <span className='text-success d-block'>In Stock</span>
+                                        <Rating className='mt-2 mb-2' name='read-only' value={5} readOnly size='small' precision={0.5} />
+                                        <div className='d-flex'>
+                                            <span className='oldPrice'>$20.00</span>
+                                            <span className='netPrice text-danger ml-2'>$16.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='item productItem'>
+                                    <div className='imgWrapper'>
+                                        <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='w-100' />
+                                    </div>
+                                    <div className='info'>
+                                        <h4>Wethrel's original ceramal hard candies</h4>
+                                        <span className='text-success d-block'>In Stock</span>
+                                        <Rating className='mt-2 mb-2' name='read-only' value={5} readOnly size='small' precision={0.5} />
+                                        <div className='d-flex'>
+                                            <span className='oldPrice'>$20.00</span>
+                                            <span className='netPrice text-danger ml-2'>$16.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='item productItem'>
+                                    <div className='imgWrapper'>
+                                        <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='w-100' />
+                                    </div>
+                                    <div className='info'>
+                                        <h4>Wethrel's original ceramal hard candies</h4>
+                                        <span className='text-success d-block'>In Stock</span>
+                                        <Rating className='mt-2 mb-2' name='read-only' value={5} readOnly size='small' precision={0.5} />
+                                        <div className='d-flex'>
+                                            <span className='oldPrice'>$20.00</span>
+                                            <span className='netPrice text-danger ml-2'>$16.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='item productItem'>
+                                    <div className='imgWrapper'>
+                                        <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='w-100' />
+                                    </div>
+                                    <div className='info'>
+                                        <h4>Wethrel's original ceramal hard candies</h4>
+                                        <span className='text-success d-block'>In Stock</span>
+                                        <Rating className='mt-2 mb-2' name='read-only' value={5} readOnly size='small' precision={0.5} />
+                                        <div className='d-flex'>
+                                            <span className='oldPrice'>$20.00</span>
+                                            <span className='netPrice text-danger ml-2'>$16.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='item productItem'>
+                                    <div className='imgWrapper'>
+                                        <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg' className='w-100' />
+                                    </div>
+                                    <div className='info'>
+                                        <h4>Wethrel's original ceramal hard candies</h4>
+                                        <span className='text-success d-block'>In Stock</span>
+                                        <Rating className='mt-2 mb-2' name='read-only' value={5} readOnly size='small' precision={0.5} />
+                                        <div className='d-flex'>
+                                            <span className='oldPrice'>$20.00</span>
+                                            <span className='netPrice text-danger ml-2'>$16.99</span>
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
