@@ -116,7 +116,17 @@
 }
 
 .productRow2 .productItem{
-    width: 23%;
+    width: 24%;
     overflow: hidden;
     border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.bannerSec{
+    gap: 10px;
+}
+
+.stickey{
+    position: sticky;
+    top: 20px;
+    z-index: 100;
 }
