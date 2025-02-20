@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Navigation } from 'swiper/modules';
 import Products from './Products';
+import NewsLetter from '../HomeBanner/NewsLetter';
 
 const HomeProducts = () => {
   return (
@@ -113,6 +114,9 @@ const HomeProducts = () => {
         </div>
 
     </section>
+
+    <NewsLetter />
+    
     </>
   )
 }
