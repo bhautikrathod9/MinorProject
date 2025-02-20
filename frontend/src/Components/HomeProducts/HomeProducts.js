@@ -2,24 +2,25 @@ import React from 'react'
 import '../HomeProducts/HomeProducts.css'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Button from '@mui/material/Button';
-import Slider from 'react-slick';
-import { AiOutlineFullscreen } from "react-icons/ai";
-import { FaRegHeart } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Navigation } from 'swiper/modules';
-import { Rating } from '@mui/material';
 import Products from './Products';
 
 const HomeProducts = () => {
   return (
+    <>
     <section className='homeProducts'>
         <div className='container'>
             <div className='row'>
                 <div className='col-md-3'>
                     <div className='banner'>
                         <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg' className='cursor'/>
+                    </div>
+
+                    <div className='banner mt-3'>
+                        <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-banner-04.jpg' className='cursor'/>
                     </div>
                 </div>
 
@@ -60,7 +61,6 @@ const HomeProducts = () => {
                             <SwiperSlide>
                                 <Products />
                             </SwiperSlide>
-
                             <SwiperSlide>
                                 <Products />
                             </SwiperSlide>
@@ -82,51 +82,26 @@ const HomeProducts = () => {
                         <Button className="viewAllBtn ml-auto">View All <FaLongArrowAltRight /></Button>
                     </div>
 
-                    <div className='product_row w-100 mt-4'>
-                        <Swiper
-                            slidesPerView={4}
-                            spaceBetween={10}
-                            pagination={{
-                            clickable: true,
-                            }}
-                            modules={[Navigation]}
-                            className="mySwiper"
-                        > 
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
+                    <div className='product_row productRow2 w-100 mt-4 d-flex'>
+                        <Products />
+                        <Products />
+                        <Products />
+                        <Products />
+                        <Products />
+                        <Products />
+                        <Products />
+                        <Products />
+                        <Products />
+                        <Products />
+                        <Products />
 
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Products />
-                            </SwiperSlide>
-                        </Swiper>
                     </div>
                 </div>       
             </div>
         </div>
 
     </section>
+    </>
   )
 }
 

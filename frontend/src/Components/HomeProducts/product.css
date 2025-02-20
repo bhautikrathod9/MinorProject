@@ -89,6 +89,15 @@
 
 .productItem .imgwrapper {
     overflow: hidden;
+    position: relative;
+}
+
+.productItem .imgWrapper img {
+    transition: transform 0.1s ease-in-out;
+}
+
+.productItem:hover .imgWrapper img {
+    transform: scale(1.10); /* Slightly enlarge the image */
 }
 
 .productItem .actions button svg {
@@ -99,4 +108,15 @@
 
 .productItem .actions button:hover svg {
     color: white;
+}
+
+.productRow2{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.productRow2 .productItem{
+    width: 23%;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
