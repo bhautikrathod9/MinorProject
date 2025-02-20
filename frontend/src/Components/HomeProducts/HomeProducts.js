@@ -15,12 +15,14 @@ const HomeProducts = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col-md-3'>
-                    <div className='banner'>
-                        <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg' className='cursor'/>
-                    </div>
+                    <div className='stickey'>
+                        <div className='banner'>
+                            <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg' className='cursor'/>
+                        </div>
 
-                    <div className='banner mt-3'>
-                        <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-banner-04.jpg' className='cursor'/>
+                        <div className='banner mt-3'>
+                            <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-banner-04.jpg' className='cursor'/>
+                        </div>
                     </div>
                 </div>
 
@@ -94,8 +96,18 @@ const HomeProducts = () => {
                         <Products />
                         <Products />
                         <Products />
-
                     </div>
+
+                    <div className='d-flex mt-4 mb-5 bannerSec'>
+                        <div className='banner'>
+                            <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/08/bacola-banner-01.jpg' className='cursor w-100'/>
+                        </div>
+
+                        <div className='banner'>
+                            <img src='https://klbtheme.com/bacola/wp-content/uploads/2021/08/bacola-banner-02.jpg' className='cursor w-100'/>
+                        </div>
+                    </div>
+
                 </div>       
             </div>
         </div>
