@@ -4,24 +4,24 @@
     border-top: 1px solid #e9ecef; /* Top border */
 }
 
-.footer_nav_container {
-    margin-bottom: 20px; /* Space below the nav container */
-    text-align: center; /* Center the text */
+.footer_nav_container, 
+.footer_social, 
+.cr {
+    text-align: left; /* Align text to the left */
+    padding-left: 40px; /* Adjust left padding for spacing */
 }
 
 .footer_nav {
     list-style: none; /* Remove default list styles */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
 }
 
 .footer_nav li {
-    display: inline; /* Display items inline */
-    margin-right: 20px; /* Space between items */
-}
-
-.footer_nav li:last-child {
-    margin-right: 0; /* Remove margin for the last item */
+    margin: 10px 0; /* Space between items */
 }
 
 .footer_nav a {
@@ -37,22 +37,19 @@
 
 .footer_social {
     margin-bottom: 20px; /* Space below social icons */
-    text-align: center; /* Center the social icons */
 }
 
 .footer_social ul {
     list-style: none; /* Remove default list styles */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align icons to the left */
 }
 
 .footer_social li {
-    display: inline; /* Display items inline */
-    margin-right: 15px; /* Space between icons */
-}
-
-.footer_social li:last-child {
-    margin-right: 0; /* Remove margin for the last icon */
+    margin: 10px 0; /* Space between icons */
 }
 
 .footer_social a {
@@ -62,11 +59,11 @@
 }
 
 .footer_social a:hover {
-    color: #ff8942 /* Change color on hover */
+    color: #ff8942; /* Change color on hover */
 }
 
 .cr {
-    text-align: center; /* Center text */
+    text-align: center;
     color: #6c757d; /* Light gray text color */
     font-size: 14px; /* Font size */
 }
