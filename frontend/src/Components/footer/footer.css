@@ -1,0 +1,82 @@
+.footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 40px 0; /* Padding for top and bottom */
+    border-top: 1px solid #e9ecef; /* Top border */
+}
+
+.footer_nav_container {
+    margin-bottom: 20px; /* Space below the nav container */
+    text-align: center; /* Center the text */
+}
+
+.footer_nav {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.footer_nav li {
+    display: inline; /* Display items inline */
+    margin-right: 20px; /* Space between items */
+}
+
+.footer_nav li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.footer_nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #343a40; /* Dark text color */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer_nav a:hover {
+    color: #ff8942; /* Change color on hover */
+}
+
+.footer_social {
+    margin-bottom: 20px; /* Space below social icons */
+    text-align: center; /* Center the social icons */
+}
+
+.footer_social ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.footer_social li {
+    display: inline; /* Display items inline */
+    margin-right: 15px; /* Space between icons */
+}
+
+.footer_social li:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+}
+
+.footer_social a {
+    color: #343a40; /* Dark icon color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer_social a:hover {
+    color: #ff8942 /* Change color on hover */
+}
+
+.cr {
+    text-align: center; /* Center text */
+    color: #6c757d; /* Light gray text color */
+    font-size: 14px; /* Font size */
+}
+
+.cr a {
+    font-weight: bold;
+    color: #ff8942; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.cr a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

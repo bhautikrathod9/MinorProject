@@ -63,6 +63,7 @@
     font-size: 14px !important;
     padding: 12px 25px !important;
     color: #fff !important;
+    cursor: pointer !important;
     text-transform: capitalize !important;
     font-weight: 600 !important;
     border: #ff8942;
@@ -71,6 +72,5 @@
 
 .newsLetterSection form button:hover{
     background: #ff6512 !important;
-    cursor: pointer;
     border-radius: 15px;
 }
